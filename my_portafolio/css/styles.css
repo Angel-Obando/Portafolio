@@ -1,0 +1,111 @@
+/* Fondo general del sitio web */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                url('../img/inge.png') center center/cover no-repeat fixed;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background: none;
+    color: white;
+}
+
+/* Secciones */
+section {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 60px 0;
+    border-radius: 10px;
+}
+
+/* Sección de proyectos */
+#projects {
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro translúcido */
+    padding: 60px 0;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6); /* Sombra para destacar la sección */
+}
+
+/* Tarjetas de proyecto */
+.card {
+    background-color: rgba(0, 50, 100, 0.5); /* Fondo oscuro translúcido acorde al diseño */
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6); /* Sombra ligera para dar profundidad */
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px); /* Efecto de elevación al hacer hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.8); /* Mayor sombra en hover */
+}
+
+.card img {
+    width: 100%; /* Imagen ocupa todo el ancho */
+    height: 180px; /* Altura fija */
+    object-fit: cover; /* Mantiene proporciones */
+    border-bottom: 3px solid rgba(0, 170, 255, 0.5); /* Línea de acento bajo la imagen */
+}
+
+.card-title {
+    color: #00aaff; /* Color destacado para los títulos */
+    font-weight: bold;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.card-body {
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Botones */
+.card a {
+    text-decoration: none;
+    color: white;
+    background-color: #00aaff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-top: 10px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.card a:hover {
+    background-color: #007acc; /* Color más oscuro en hover */
+    transform: scale(1.1); /* Ligero zoom */
+}
+
+
+/* Footer */
+footer {
+    background-color: #343a40;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+}
+
+/* Títulos */
+h2 {
+    color: #00aaff;
+}
+
+/* Redes sociales */
+.social-icons a {
+    text-decoration: none;
+    font-size: 1.25rem;
+    display: inline-block;
+    margin: 0 10px;
+    color: #00aaff;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #007acc;
+}

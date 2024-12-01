@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">My Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#about">Sobre mí</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="text-white text-center py-5">
+        <h1 class="display-4">My Portfolio</h1>
+        <p class="lead text-white">Angel Thomas Obando Caicedo</p>
+    </header>
+    
+
+    <!-- About Me Section -->
+    <section id="about" class="container py-6">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Sobre mí</h2>
+                <p>Hola, soy Angel, un estudiante de Ingeniería de sistemas.</p>
+
+                <p>También estoy cursando un Técnico Laboral en Desarrollo de Software a través del programa de la Gobernación "1000 Jóvenes Programando".</p>
+
+                <p>He adquirido experiencia en lenguajes de programación como Java, JavaScript, C++, C, Python, así como en la creación de páginas con HTML, CSS y Bootstrap.</p>
+
+                <p>He trabajado con la programación orientada a objetos, interfaces, diagramas de flujo, bases de datos, juegos básicos y manejo de inteligencia artificial.</p>
+            </div>
+            <div class="col-md-6">
+                <img src="../img/portafolio.jpg" alt="Profile Picture" class="img-fluid rounded-circle">
+            </div>
+        </div>
+    </section>
+
+   <!-- Projects Section -->
+<section id="projects" class="bg-light py-5">
+    <div class="container">
+        <h2 class="text-center mb-4 text-black">Proyectos</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <!-- Project 1 -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="img/Untitled.jpg" class="card-img-top img-fluid" alt="Project 1">
+                    <div class="card-body">
+                        <h5 class="card-title text-black">Proyecto 1</h5>
+                        <p class="card-text text-black">En este proyecto encontrarás la estructura de una base de datos para una aerolínea.</p>
+                        <a href="https://github.com/Angel-Obando/Database-aerolinea_bya" class="btn btn-primary">Ver Proyecto</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Project 2 -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="img/piedra.juego.PNG" class="card-img-top img-fluid" alt="Project 2">
+                    <div class="card-body">
+                        <h5 class="card-title text-black">Proyecto 2</h5>
+                        <p class="card-text text-black">Simulación de un juego básico: Piedra, papel o tijera.</p>
+                        <a href="../piedra,papel,tijera/Untitled-2.html" class="btn btn-primary">Ver Proyecto</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Project 3 -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="img/ecommerce.PNG" class="card-img-top img-fluid" alt="Project 3">
+                    <div class="card-body">
+                        <h5 class="card-title text-black">Proyecto 3</h5>
+                        <p class="card-text text-black">En este proyecto se realizo un ECOMMERCE, que muestra la estructura de una pagina web de compras, con diseños de bootstrap y estilos css.</p>
+                        <a href="https://github.com/Angel-Obando/Proyecto-Final-Introduccion-a-Los-Lenguajes-de-Programaci-n" class="btn btn-primary">Ver Proyecto</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="container py-5">
+        <h2 class="text-center">Contáctame</h2>
+        <form id="contactForm" class="mx-auto" style="max-width: 600px;">
+            <div class="mb-3">
+                <label for="name" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Mensaje</label>
+                <textarea class="form-control" id="message" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+        <div id="formResult" class="mt-3"></div>
+    </section>
+
+    <!-- Social Media Links Section -->
+    <section id="social" class="bg-dark text-white py-3">
+        <div class="container text-center">
+            <h3>Sígueme en mis redes sociales</h3>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/angel-thomas-obando-caicedo-b9a2aa33b/" target="_blank" class="btn btn-primary btn-lg m-2 text-white">
+                    <i class="bi bi-linkedin"></i> LinkedIn
+                </a>
+                <a href="https://github.com/Angel-Obando" target="_blank" class="btn btn-dark btn-lg m-2 text-white">
+                    <i class="bi bi-github"></i> GitHub
+                </a>
+                <a href="https://www.facebook.com/angelthomas.obando/" target="_blank" class="btn btn-info btn-lg m-2 text-white">
+                    <i class="bi bi-facebook"></i> Facebook
+                </a>
+                <a href="https://www.instagram.com/angel_obando_5/" target="_blank" class="btn btn-danger btn-lg m-2 text-white">
+                    <i class="bi bi-instagram"></i> Instagram
+                </a>
+            </div>
+        </div>
+    </section>
+    
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 My Portfolio. Todos los derechos reservados.</p>
+    </footer>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
